@@ -1,0 +1,30 @@
+body {
+    background-image: url("../images/pink_background_960_720.jpg");
+    background-color: #f6879f;
+    /* background-position-y: 58px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+#bodyMiddle {
+    height: 100%;
+    width: 60%;
+    /* display: block; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f6879f;
+}
+
+h1 {
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Nosifer', cursive;
+}
