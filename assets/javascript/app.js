@@ -1,29 +1,29 @@
 //--------------SET UP VARIABLES AND OBJECTS--------------------
 
 var questions = [{
-    question: "??",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
-    correctAnswer: "answer3"
+    question: "In what year did Scotsman John Napier invent logarithms?",
+    answers: ["1206", "1614", "1776", "1991"],
+    correctAnswer: "1614"
 }, {
-    question: "??",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
-    correctAnswer: "answer3"
+    question: "The first flight of the Boeing 747, or Jumbo Jet, took place in this year, with passenger service offered one year later.",
+    answers: ["1969", "1952", "1999", "1942"],
+    correctAnswer: "1969"
 }, {
-    question: "??",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
-    correctAnswer: "answer3" 
+    question: "Bessemer introduces his process for producing steel in this year, allowing for a dramatic increase in the output of the steel industry.",
+    answers: ["1555", "1690", "1787", "1856"],
+    correctAnswer: "1856" 
 }, {
-    question: "??",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
-    correctAnswer: "answer3"
+    question: "While imprisoned in Genoa, Marco Polo writes in this year his celebrated accounts of his travels throughout the Asian continent.",
+    answers: ["1347", "1298", "1428", "1502"],
+    correctAnswer: "1298"
 }, {
-    question: "??",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
-    correctAnswer: "answer3"
+    question: "The space shuttle, Challenger, explodes in this year, killing all on board.",
+    answers: ["1968", "1987", "1991", "1986"],
+    correctAnswer: "1986"
 }, {
-    question: "??",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
-    correctAnswer: "answer3"
+    question: "The date by which experts believe the pyramids in Egypt were completed.",
+    answers: ["C. 5000 BCE", "c. 5 CE", "c. 2500 BCE", "c.300 BCE"],
+    correctAnswer: "c. 2500 BCE"
 }];
 
 //-------FUNCTIONS------------------------------------------------------
@@ -61,7 +61,7 @@ var game = {
                 //radio input type means you can only select one of the options
                 //append each question with a name equal to the number of the question and a value that is equal to the answer
                 //the values will be stored in the buttons
-                var ans = ("<input type='radio' name='question-"+i+"' value='" + questions[i].answers[key]+"'> "+questions[i].answers[key]);
+                var ans = ("<br><input type='radio' name='question-"+i+"' value='" + questions[i].answers[key]+"'> "+questions[i].answers[key]);
                 (questDiv).append(ans);
             }
         }
