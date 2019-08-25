@@ -30,6 +30,11 @@ var questions = [{
 $("#startBtn").on("click", function(){
     game.start();
 })
+//because the DONE button is dynamically created at the end of the code, 
+//the document on click function needs to be used.
+$(document).on("click", "#end", function(){
+    game.done();
+})
 //object to hold game stats and beginning and ending functions
 var game = {
     correct: 0,
@@ -60,6 +65,7 @@ var game = {
                 (questDiv).append(ans);
             }
         }
+        $("#questionsContainer").append("<br><button id='end'>DONE</button>")
     },
     //game.done function increases correct counters for correct answers
     // and incorrect counters for incorrect answers
@@ -126,6 +132,5 @@ var game = {
             //finds questions left unanswered
             $("#questionsContainer").append("<h3>Unanswered: " +(questions.length-(this.incorrect+this.correct))+"</h3>");
         }
-    // }
-}
+};
 
