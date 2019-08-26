@@ -35,6 +35,9 @@ $("#startBtn").on("click", function(){
 $(document).on("click", "#end", function(){
     game.done();
 })
+$(document).on("click", "#restart", function(){
+    game.restart();
+})
 //object to hold game stats and beginning and ending functions
 var game = {
     correct: 0,
@@ -131,6 +134,10 @@ var game = {
             $("#questionsContainer").append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
             //finds questions left unanswered
             $("#questionsContainer").append("<h3>Unanswered: " +(questions.length-(this.incorrect+this.correct))+"</h3>");
-        }
+            $("#questionsContainer").append("<br><button id='restart'>Try Again</button>");
+        },
+    restart: function(){
+        location.reload();
+    }
 };
 

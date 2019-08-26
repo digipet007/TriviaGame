@@ -17,7 +17,7 @@ html, body {
     width: 60%;
     /* display: block; */
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     border-style: groove;
