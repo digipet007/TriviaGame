@@ -40,7 +40,7 @@ var game = {
     correct: 0,
     incorrect: 0,
     //120 seconds
-    counter: 20,
+    counter: 120,
     countdown: function(){
         game.counter--;
         $("#counter").html(game.counter);
