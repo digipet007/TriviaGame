@@ -5,7 +5,9 @@ Race against the clock to answer the historical trivia questions! You have 2 min
 
 ## Getting Started
 
-To play, download from Github (https://github.com/digipet007/TriviaGame) and open the index.html file in you web browser. This is all you need to get the project up and running on your local machine
+To play, download from Github (https://github.com/digipet007/TriviaGame) and open the index.html file in you web browser. This is all you need to get the project up and running on your local machine.
+
+Or play online: (https://digipet007.github.io/TriviaGame/)
 
 ### Prerequisites
 
@@ -23,18 +25,17 @@ This game will function in most browsers for desktop or laptop computers.
 
 Pull requests welcome!
 
-## Author
+## Authors
 
-* **Sarah Arnold** (https://github.com/digipet007)
+* **Sarah Arnold** --view my portfolio and bio: (https://digipet007.github.io/Bootstrap-Portfolio/)
 
 ## License
 
-License: none (public domain)
+This project is licensed under the MIT License
 
 ## Acknowledgments
 
-* uses Myer Web Reset
-http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
+* This app utilizes the Myerweb CSS reset (https://meyerweb.com/eric/tools/css/reset/) 
+* Created for UW Full Stack Flex Certificate program, according to program specifications.
    
 
