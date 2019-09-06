@@ -1,7 +1,6 @@
 body {
     background-image: url("../images/map.jpg");
     background-color: #f6879f;
-    /* background-position-y: 58px; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -15,14 +14,13 @@ html, body {
 #bodyMiddle {
     height: 100%;
     width: 60%;
-    /* display: block; */
     margin-top: 60px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     border-style: groove;
     background: #ebc378;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #container{
