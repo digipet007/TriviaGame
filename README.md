@@ -15,11 +15,11 @@ This game will function in most browsers for desktop or laptop computers.
 
 ## Built With
 
-*HTML
-*CSS
-*Javascript
-*uses jQuery to dynamically update the HTML
-*Google Fonts
+* HTML
+* CSS
+* Javascript
+* uses jQuery to dynamically update the HTML
+* Google Fonts
 
 ## Contributing
 
@@ -38,6 +38,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Acknowledgments
 
 * This app utilizes the Myerweb CSS reset (https://meyerweb.com/eric/tools/css/reset/) 
+* This code utilizes Google Fonts (https://fonts.google.com)
 * Created for UW Full Stack Flex Certificate program, according to program specifications.
    
 
