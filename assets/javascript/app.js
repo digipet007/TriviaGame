@@ -72,7 +72,6 @@ var game = {
     //game.done function increases correct counters for correct answers
     // and incorrect counters for incorrect answers
     done: function(){
-
         for(var j = 0; j <questions.length; j++){
             $.each($("input[name='question-" + j + "']:checked"),function(){
                 if($(this).val()==questions[j].correctAnswer){
