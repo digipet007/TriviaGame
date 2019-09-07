@@ -61,7 +61,7 @@ var game = {
             var questDiv = $("<div class='qA'>" + "<h2>" + questions[i].question + "</h2>" + "</div>");
             $("#questionsContainer").append(questDiv)
             for (var key in questions[i].answers){
-                //append each question with a name equal to the number of the question and a value that is equal to the answer
+                //append each question with a name that includes its respective number and a value that is equal to the answer
                 //the values will be stored in the buttons
                 var ans = ("<br><input type='radio' name='question-"+i+"' value='" + questions[i].answers[key]+"'> "+questions[i].answers[key]);
                 (questDiv).append(ans);
@@ -72,55 +72,17 @@ var game = {
     //game.done function increases correct counters for correct answers
     // and incorrect counters for incorrect answers
     done: function(){
-        //looks for any input type that has the name of question-1 and is currently checked
-        $.each($("input[name='question-0']:checked"),function(){
-            if($(this).val()==questions[0].correctAnswer){
-                game.correct++;
-            }
-            else{
-                game.incorrect++;
-            }
-        })
-        $.each($("input[name='question-1']:checked"),function(){
-            if($(this).val()==questions[1].correctAnswer){
-                game.correct++;
-            }
-            else{
-                game.incorrect++;
-            }
-        })
-        $.each($("input[name='question-2']:checked"),function(){
-            if($(this).val()==questions[2].correctAnswer){
-                game.correct++;
-            }
-            else{
-                game.incorrect++;
-            }
-        })
-        $.each($("input[name='question-3']:checked"),function(){
-            if($(this).val()==questions[3].correctAnswer){
-                game.correct++;
-            }
-            else{
-                game.incorrect++;
-            }
-        })
-        $.each($("input[name='question-4']:checked"),function(){
-            if($(this).val()==questions[4].correctAnswer){
-                game.correct++;
-            }
-            else{
-                game.incorrect++;
-            }
-        })
-        $.each($("input[name='question-5']:checked"),function(){
-            if($(this).val()==questions[5].correctAnswer){
-                game.correct++;
-            }
-            else{
-                game.incorrect++;
-            }
-        });
+
+        for(var j = 0; j <questions.length; j++){
+            $.each($("input[name='question-" + j + "']:checked"),function(){
+                if($(this).val()==questions[j].correctAnswer){
+                    game.correct++;
+                }
+                else {
+                    game.incorrect++;
+                }
+            })
+        }
         this.result();
         },
         //creates result screen
