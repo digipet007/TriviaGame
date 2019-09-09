@@ -25,6 +25,10 @@ This game will function in most browsers for desktop or laptop computers.
 
 Pull requests welcome!
 
+## Author
+
+* **Sarah Arnold** --view my portfolio and bio: (https://digipet007.github.io/Sarahs-Portfolio/)
+
 ## License
 
 Copyright 2019 SARAH ARNOLD
